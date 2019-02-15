@@ -50,10 +50,10 @@ return [
 `site/snippets/imagetag.php`:
 
 ```php
-<a href="<?= $image->resize(2000)->url() ?>" data-fancybox="page">
-  <img src="<?= $image->resize(900)->url() ?>" alt="<?= html($alt) ?? $image->alt()->html() ?>" />
-</a>
+<a href="<?= $image->resize(2000)->url() ?>" data-fancybox="page"><img src="<?= $image->resize(900)->url() ?>" alt="<?= html($alt) ?? $image->alt()->html() ?>" /></a>
 ```
+Notice that the output of the snippet will still be parsed as markdown (beacuse the output of all kirbytags is).
+Line breaks in your HTML might be interpreted as "paragraps" for markdown, which might have unintended outcomes in the DOM. 
 
 The following `$variables` are passed to the snippet:
  - `$image`: the resolved File object to the original image passed to the tag
