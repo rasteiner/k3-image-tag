@@ -1,0 +1,15 @@
+{
+    "name": "rasteiner/k3-image-tag",
+    "description": "An (image: ...) tag that resizes the image.",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Steiner",
+            "email": "roman@toastlab.ch"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    }
+}
